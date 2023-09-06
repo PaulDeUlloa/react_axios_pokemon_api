@@ -1,4 +1,3 @@
-import './App.css';
 import { useState } from 'react';
 import PokemonFetch from "./components/PokemonFetch";
 import PokemonName from "./components/PokemonName";
@@ -14,9 +13,9 @@ function App() {
       .then((res) => {
         console.log(res);
         setPokemonName(res.data.results);
-    })
-    .catch((err) => console.log(err));
-};
+      })
+      .catch((err) => console.log(err));
+  };
 
 
   return (
